@@ -1927,7 +1927,7 @@ function SettingsPage() {
    ========================================================= */
 export default function App() {
   const isMobile = useIsMobile();
-  const [page, setPage] = useState('dashboard');
+  const [page, setPage] = useState('map');
   const [selectedId, setSelectedId] = useState(null);
 
   const [points, setPoints] = useState(() => generatePoints());
