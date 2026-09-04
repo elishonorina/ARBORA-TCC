@@ -497,30 +497,6 @@ const DEFAULT_ZOOM = 12;
 // Quanto maior o número, mais "perto" (zoom) é preciso chegar.
 const CRIT_MIN_ZOOM = { critica: 0, alta: 10, moderada: 11, baixa: 13 };
 
-const SERGIPE_NETWORK_LINES = [
-  [
-    [-10.65, -37.55],
-    [-10.72, -37.3],
-    [-10.8, -37.2],
-    [-10.95, -37.05],
-  ],
-  [
-    [-10.95, -37.05],
-    [-11.05, -36.9],
-    [-11.15, -37.0],
-    [-11.3, -37.6],
-  ],
-  [
-    [-10.72, -37.3],
-    [-10.6, -37.05],
-    [-10.5, -36.85],
-  ],
-  [
-    [-11.15, -37.0],
-    [-11.0, -36.55],
-    [-10.8, -36.45],
-  ],
-];
 const SERGIPE_DESARMES = [
   [-10.72, -37.3],
   [-11.05, -36.9],
@@ -581,20 +557,6 @@ function MapCanvas({
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-
-        {layers.rede &&
-          SERGIPE_NETWORK_LINES.map((line, i) => (
-            <Polyline
-              key={i}
-              positions={line}
-              pathOptions={{
-                color: '#4b5563',
-                weight: 2.5,
-                dashArray: '6 5',
-                opacity: 0.65,
-              }}
-            />
-          ))}
 
         {layers.pontos &&
           visiblePoints.map((p) => {
