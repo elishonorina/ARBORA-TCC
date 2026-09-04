@@ -480,12 +480,14 @@ function BottomNav({ page, setPage }) {
 /* =========================================================
    MAP (real — Leaflet + OpenStreetMap, centrado em Sergipe)
    ========================================================= */
-const SERGIPE_CENTER = [-10.85, -37.15];
+// Posição inicial: região central de Aracaju.
+const SERGIPE_CENTER = [-10.94720, -37.07310];
 const SERGIPE_BOUNDS = [
   [-11.85, -38.35],
   [-9.35, -36.05],
 ];
-const DEFAULT_ZOOM = 9;
+// Zoom inicial mais próximo da capital, sem abrir mostrando todo o estado.
+const DEFAULT_ZOOM = 12;
 // A partir de qual nível de zoom cada criticidade passa a aparecer.
 // Quanto maior o número, mais "perto" (zoom) é preciso chegar.
 const CRIT_MIN_ZOOM = { critica: 0, alta: 10, moderada: 11, baixa: 13 };
@@ -522,7 +524,7 @@ const SERGIPE_DESARMES = [
 function FlyToLocating({ active }) {
   const map = useMap();
   useEffect(() => {
-    if (active) map.flyTo(SERGIPE_CENTER, 11, { duration: 0.8 });
+    if (active) map.flyTo(SERGIPE_CENTER, 14, { duration: 0.8 });
   }, [active]);
   return null;
 }
@@ -562,7 +564,7 @@ function MapCanvas({
       <MapContainer
         center={SERGIPE_CENTER}
         zoom={DEFAULT_ZOOM}
-        minZoom={8}
+        minZoom={10}
         maxZoom={17}
         maxBounds={SERGIPE_BOUNDS}
         maxBoundsViscosity={1.0}
@@ -961,6 +963,7 @@ function MapPage({
   setSelectedId,
   isMobile,
   goDetails,
+  setPage,
   nearbyMode = false,
 }) {
   const [layers, setLayers] = useState({
@@ -2008,6 +2011,7 @@ export default function App() {
               setSelectedId={setSelectedId}
               isMobile={isMobile}
               goDetails={goDetails}
+              setPage={setPage}
             />
           )}
           {page === 'register' && (
