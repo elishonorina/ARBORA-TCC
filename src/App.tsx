@@ -146,7 +146,7 @@ function seededRand(seed) {
    ========================================================= */
 const VEGETATION_POINTS = [
   {
-    id: 'TESTE 01 ',
+    id: 'VEG-0001',
     lat: '-10.9774732297371',
     lng: '-37.06816251585318',
     criticidade: 'critica',
@@ -166,6 +166,29 @@ const VEGETATION_POINTS = [
     fotos: [
       "/ARBORA-TCC/foto-1.png",
       "/ARBORA-TCC/foto-2.png"
+    ],
+    
+  },
+  {
+    id: 'VEG-0002',
+    lat: '-11.094835222851344',
+    lng: '-37.135834752598306',
+    criticidade: 'critica',
+    tipo: 'Árvore de grande porte',
+    porte: 'Grande',
+    altura: '9.0',
+    estado: 'Risco de queda',
+    distanciaRede: '1.2',
+    tipoRede: 'Baixa tensão',
+    trecho: 'MT-042',
+    alimentador: 'ALM-10',
+    municipio: 'Aracaju',
+    ocorrencias: 2,
+    intervencao: 'pendente',
+    ultimaInspecao: '18/08/2026',
+    observacoes: 'Árvore de grande porte na média tensão',
+    fotos: [
+      "/ARBORA-TCC/9ee73eab-b24d-4453-9acf-e3e35ff51e1e.jpg",
     ],
     
   },
