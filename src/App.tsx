@@ -146,7 +146,7 @@ function seededRand(seed) {
    ========================================================= */
 const VEGETATION_POINTS = [
   {
-    id: 'TESTE',
+    id: 'TESTE 01 ',
     lat: '-10.949387988331504',
     lng: '-37.071319541159106',
     criticidade: 'critica',
@@ -163,6 +163,11 @@ const VEGETATION_POINTS = [
     intervencao: 'pendente',
     ultimaInspecao: '18/08/2026',
     observacoes: 'Ponto identificado durante inspeção de rotina do trecho.',
+    fotos: [
+      "/ARBORA-TCC/public/Foto-EX-1.jpg",
+      "/ARBORA-TCC/public/Foto-EX-2.jpg"
+    ],
+    
   },
 
   
