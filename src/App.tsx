@@ -164,8 +164,8 @@ const VEGETATION_POINTS = [
     ultimaInspecao: '18/08/2026',
     observacoes: 'Ponto identificado durante inspeção de rotina do trecho.',
     fotos: [
-      "/ARBORA-TCC/public/foto-1.png",
-      "/ARBORA-TCC/public/foto-2.png"
+      "/ARBORA-TCC/foto-1.png",
+      "/ARBORA-TCC/foto-2.png"
     ],
     
   },
