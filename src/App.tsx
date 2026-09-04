@@ -1059,7 +1059,9 @@ function MapPage({
           >
             <Navigation className="h-4 w-4" /> Minha localização
           </button>
-          <button className="flex items-center gap-1.5 rounded-md bg-green-700 px-3 py-2 text-sm text-white font-medium hover:bg-green-800">
+          <button 
+            onClick={() => setPage('register')}
+            className="flex items-center gap-1.5 rounded-md bg-green-700 px-3 py-2 text-sm text-white font-medium hover:bg-green-800">
             <PlusCircle className="h-4 w-4" /> Registrar vegetação
           </button>
         </div>
