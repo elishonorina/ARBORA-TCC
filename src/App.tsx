@@ -147,15 +147,15 @@ function seededRand(seed) {
 const VEGETATION_POINTS = [
   {
     id: 'TESTE 01 ',
-    lat: '-10.949387988331504',
-    lng: '-37.071319541159106',
+    lat: '-10.9774732297371',
+    lng: '-37.06816251585318',
     criticidade: 'critica',
     tipo: 'Árvore de grande porte',
     porte: 'Grande',
     altura: '9.0',
     estado: 'Risco de queda',
     distanciaRede: '1.2',
-    tipoRede: 'Média tensão',
+    tipoRede: 'Baixa tensão',
     trecho: 'MT-042',
     alimentador: 'ALM-10',
     municipio: 'Aracaju',
