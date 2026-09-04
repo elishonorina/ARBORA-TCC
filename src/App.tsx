@@ -145,6 +145,26 @@ function seededRand(seed) {
 
    ========================================================= */
 const VEGETATION_POINTS = [
+  {
+    id: 'TESTE',
+    lat: '-10.949387988331504',
+    lng: '-37.071319541159106',
+    criticidade: 'critica',
+    tipo: 'Árvore de grande porte',
+    porte: 'Grande',
+    altura: '9.0',
+    estado: 'Risco de queda',
+    distanciaRede: '1.2',
+    tipoRede: 'Média tensão',
+    trecho: 'MT-042',
+    alimentador: 'ALM-10',
+    municipio: 'Aracaju',
+    ocorrencias: 2,
+    intervencao: 'pendente',
+    ultimaInspecao: '18/08/2026',
+    observacoes: 'Ponto identificado durante inspeção de rotina do trecho.',
+  },
+
   
 ];
 
