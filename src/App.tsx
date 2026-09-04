@@ -349,9 +349,9 @@ function EmptyState({ label }) {
    NAVIGATION CONFIG
    ========================================================= */
 const NAV = [
-  { key: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { key: 'map', label: 'Mapa de Vegetação', icon: MapIcon },
   { key: 'register', label: 'Registrar Vegetação', icon: PlusCircle },
+  { key: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { key: 'points', label: 'Pontos de Vegetação', icon: ListTree },
   { key: 'interventions', label: 'Intervenções', icon: Wrench },
   { key: 'occurrences', label: 'Ocorrências / Desarmes', icon: AlertTriangle },
